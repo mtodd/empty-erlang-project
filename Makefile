@@ -19,10 +19,9 @@ test: compile
 	${ERL} -pa tests -s runner start
 
 subdirs:
-	# cd dir1; make
+	cd tests; erlc *.erl
 
 # remove all the code
 
 clean:
-	rm -rf *.beam erl_crash.dump
-	# cd dir1; make
+	rm -rf **/*.beam erl_crash.dump
