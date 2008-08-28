@@ -1,10 +1,10 @@
 .SUFFIXES: .erl .beam .yrl
 
 .erl.beam:
-  erlc -W $<
+	erlc -W $<
 
 .yrl.erl:
-  erlc -W $<
+	erlc -W $<
 
 ERL = erl -boot start_clean
 
@@ -16,13 +16,13 @@ all: compile
 compile: ${MODS:%=%.beam} subdirs
 
 test: compile
-  ${ERL} -pa tests -s runner start
+	${ERL} -pa tests -s runner start
 
 subdirs:
-  # cd dir1; make
+	# cd dir1; make
 
 # remove all the code
 
 clean:
-  rm -rf *.beam erl_crash.dump
-  # cd dir1; make
+	rm -rf *.beam erl_crash.dump
+	# cd dir1; make

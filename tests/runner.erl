@@ -1,5 +1,5 @@
--module(runner)
--export([start/0])
+-module(runner).
+-export([start/0]).
 
 start() ->
   io:format("Running tests...~n"),
