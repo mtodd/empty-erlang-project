@@ -24,4 +24,4 @@ subdirs:
 # remove all the code
 
 clean:
-	rm -rf **/*.beam erl_crash.dump
+	rm -rf *.beam **/*.beam erl_crash.dump
