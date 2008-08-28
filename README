@@ -1,1 +1,6 @@
 Empty Erlang Project
+
+TODO
+* Move to Rake instead of Make
+* Refactor the test runner to only require one function for a test file
+
