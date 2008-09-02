@@ -1,0 +1,11 @@
+Package: empty-erlang-project
+Version: 0.1
+Section: web 
+Priority: optional
+Architecture: all
+Essential: no
+Depends: erlang
+Installed-Size: 1024
+Maintainer: Matt Todd <chiology@gmail.org>
+Provides: empty-erlang-project
+Description: This is an empty Erlang project and requires implementation.
